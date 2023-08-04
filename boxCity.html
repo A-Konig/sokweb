@@ -56,11 +56,11 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Domů</a>
-                        <a href="about.html" class="nav-item nav-link active">O systému</a>
+                        <a href="about.html" class="nav-item nav-link">O systému</a>
                         <a href="devices.html" class="nav-item nav-link">Zařízení</a>
                         <a href="server.html" class="nav-item nav-link">Server</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Klientské aplikace</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Klientské aplikace</a>
                             <div class="dropdown-menu m-0">
                                 <a href="virtualReality.html" class="dropdown-item">Virtuální realita</a>
                                 <a href="depthCam.html" class="dropdown-item">Hloubková kamera</a>
@@ -80,17 +80,14 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">O systému</h1>
+                            <h1 class="text-white animated zoomIn">Box City</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <!--
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="about.html">O systému</a></li>
+                                    <li class="breadcrumb-item"><a class="text-white" href="virtualReality.html">Virtuální reatlita</a></li>
                                 </ol>
                             </nav>
-                            -->
                         </div>
                     </div>
                 </div>
@@ -117,150 +114,119 @@
         </div>
         <!-- Full Screen Search End -->
 
-
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">O systému</h6>
-                            <h2 class="mt-2">Software pro laboratoře techniky</h2>
+                            <h6 class="position-relative text-primary ps-4">Box City</h6>
+                            <h2 class="mt-2">O aplikaci</h2>
                         </div>
                         <p class="mb-4">
-                            Skládá se ze serveru a klientských aplikací. Server uchovává virtuální svět, který je společný pro všechny klientské aplikace.
-                            Každá z klientských aplikací může s tímto virtuálním světem interagovat, přidávat do něj objekty, objekty z něj mazat nebo objekty na serveru prohlížet a upravovat.
-                            Demonstruje studentům spolupráci mezi zařízeními a umožní jim osvojit si schopnosti jednotlivých zařízení.
+                            Aplikace Box City slouží k seznámení uživatele s virtuální realitou.
+                            Umožňuje pohybovat se po virtuální scéně a osvojit si manipulaci s objekty, které se v této scéně nacházejí.
+                            Nachází se zde městečko s krabicemi, se kterými je možné manipulovat v rámci implementované minihry. 
+                        </p>
+                            
+                        <p class="mb-4">
+                            Aplikace komunikuje se serverem a zajišťuje automatické odesílání a přijímání objektů,
+                            takže ji lze použít k prohlížení virtuálních objektů z ostatních klientských aplikací.
                         </p>
 
                         <p class="mb-4">
-                            Server je potřeba vždy. Neni nutné mít všechny klietské aplikace, může běžet několik instancí od klientské aplikace.
-                            Podporuje více připojených zařízení stejného typu??
+                            MINIHRA
+                            UKLÁDÁNÍ SCÉNY
                         </p>
 
                         <p class="mb-4">
-                            Systém obsahuje klientské aplikace pro následující zařízení:
-                            <ul>
-                                <li>haptické pero,</li>
-                                <li>virtuální realitu,</li>
-                                <li>hloubkovou kameru.</li>
-                            </ul>
+                            Aplikace spolupracuje se serverem, na který automaticky zasílá aktualizace pozic krabic, všech objektů přijatých ze serveru,
+                            a headsetu a kontrolerů reprezentující daného hráče.
+                            Při připojení k serveru musí zadané url končit lomítkem a jméno klienta musí být unikátní pro všechny připojené VR klienty.
                         </p>
-
-                        <!--
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                                <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        -->
                     </div>
                     <div class="col-lg-6">
                         <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
                     </div>
                 </div>
+
+                <div class="row g-5">
+                    <div class="wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-2">
+                            <h6 class="position-relative text-primary ps-4">Box City</h6>
+                            <h2 class="mt-2">Instalace</h2>
+                        </div>
+                        <p class="mb-4">
+                            Z odkazu níže (tlačítko „Stáhnout”) lze stáhnout nejnovější release aplikace Box City.
+                            Aplikaci lze spustit pomocí BoxCity.exe souboru, který se nachází v archivu BoxCity.zip.
+                            Návod na zacházení s aplikací je dostupný níže.
+                        </p>
+
+                        <p class="mb-4">
+                            Zdrojové kódy aplikace jsou také dostupné z odkazu níže (tlačítko „Stáhnout”). Nacházejí se v archivu Source code.
+                            Jedná se o zdrojové kódy Unity projektu, který lze otevřít <a href="https://support.unity.com/hc/en-us/articles/4402520287124-How-do-I-add-a-project-saved-on-my-computer-into-the-Unity-Hub-">pomocí UnityHub</a>.
+                            Daný projekt je třeba otevřít v Unity verze 2021.3.15f1 nebo vyšší.
+                            V importovaném projektu je hlavní spouštěcí scéna pojmenována stejně jako aplikace - tedy Box City.
+                            Dále je třeba nastavit rozlišení hry v záložce Game na FullHD.
+
+                            Pro správný import tohoto projektu je třeba mít instalován <a href="https://www.blender.org/download/lts/2-93/">Blender 2.93.1+</a>,
+                            pokud se po spuštění scény CityScene nezobrazují budovy „vesmírného městečka”,
+                            je třeba ještě importovat balíček CityRefresh_v2, který se nachází v zipu se zdrojovými kódy („Asset” -> „ImportPackage” ->  „CustomPackage” -> vybrat CityRefresh_v2.package)
+                        </p>
+
+                        <p class="mb-4">
+                            Zrojové kódy lze upravovat nebo použít pro vývoj vlastních aplikací,
+                            ale není dovoleno odstraňovat podpis původního autora.
+                        </p>
+
+                        <div class="d-flex align-items-center mt-4">
+                            <a class="btn btn-primary rounded-pill px-4 me-3" href="https://github.com/ITLaboratorySokolov/VR-App1/releases">Stáhnout</a>
+                        </div>
+
+                        <p>
+
+                        </p>
+
+                        <div class="section-title position-relative mb-4 pb-2">
+                            <h6 class="position-relative text-primary ps-4">Box City</h6>
+                            <h2 class="mt-2">Konfigurační soubor</h2>
+                        </div>
+                        <p class="mb-4">
+                            Z konfiguračního souboru se načítají počáteční hodnoty parametrů spouštěné aplikace.
+                            Patří mezi ně rozměry pokoje, udávající šířku a délku bezpečné zóny, ve které se uživatel může
+                            pohybovat aniž by se musel obávat, že narazí do objektů v reálném světě.
+                            Rozměry se zadávají v metrech, pokud se jedná o desetinné číslo, musí být zapsáno s desetinnou tečkou
+                            a mezi jednotlivými hodnotami se nachází čárka.
+                            Zadané url serveru musí končit lomítkem a jméno musí být unikátní pro všechny VR klienty.
+                            Konfigurační soubor s názvem config.txt musí být umístěn na stejné úrovni jako soubor BoxCity.exe.
+                            Jeho tvar je následující:
+                        </p>
+
+                        <div class="codeblock">
+                            <pre>
+    &lt; jméno klienta &gt;
+    &lt; url serveru &gt;
+    &lt; rozměry pokoje, např.: 1.5, 1.5 &gt;</pre>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row g-5">
+                    <div class="wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-2">
+                            <h6 class="position-relative text-primary ps-4">Box City</h6>
+                            <h2 class="mt-2">Návod k obsluze</h2>
+                        </div>
+                        <p class="mb-4">
+                            <iframe width="55%" height="415" src="https://www.youtube.com/embed/v83XQ9HR6lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- About End -->
-
-
-        <!-- Newsletter Start
-        <div class="container-xxl bg-primary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5">
-                <div class="row align-items-center" style="height: 250px;">
-                    <div class="col-12 col-md-6">
-                        <h3 class="text-white">Ready to get started</h3>
-                        <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        Newsletter End -->
-
-
-        <!-- Team Start
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
-                    <h2 class="mt-2">Meet Our Team Members</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Jhon Doe</h5>
-                                <small>CEO</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Emma William</h5>
-                                <small>Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Noah Michael</h5>
-                                <small>Designer</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        Team End -->
-        
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
