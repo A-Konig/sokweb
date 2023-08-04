@@ -112,6 +112,15 @@ h6,
     max-height: 45px;
 }
 
+.codeblock {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    background: #D0D2D1;
+    color: #1D1D27;
+}
+
+
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
