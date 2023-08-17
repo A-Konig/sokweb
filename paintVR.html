@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Podkova - Software pro laboratoře techniky</title>
+    <title>PaintVR</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/FAV_log.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,59 +121,55 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">PaintVR</h6>
+                            <h6 class="position-relative text-primary ps-4">Klientská aplikace</h6>
                             <h2 class="mt-2">O aplikaci</h2>
                         </div>
                         <p class="mb-4">
                             Aplikace PaintVR slouží k malování ve 3D. Uživateli je umožněno ve virtuální realitě kreslit pomocí VR kontrolerů a volně se pohybovat ve virtuální scéně.
                             V aplikaci lze volit mezi několika štětci a za běhu měnit jejich velikost a barvu.
-                            Štětce jsou načítány z XML souborů, k jejich vytvoření lze použít aplikaci Brush Export.
+                            Štětce jsou načítány z XML souborů, k jejich vytvoření lze použít aplikaci <a href="brushExport.html">Brush Export</a>.
                         </p>
 
                         <p class="mb-4">
-                            Aplikace komunikuje se serverem, na který posílá tahy štětcem, a přijímá  z něj objekty ve virtuálním světě,
+                            Aplikace komunikuje se serverem, na který posílá tahy štětcem, a přijímá z něj objekty virtuálního světa,
                             proto ji lze použít k prohlížení virtuálních objektů z ostatních klientských aplikací.
                         </p>
 
-                        <p class="mb-4">
-                            UKLÁDÁNÍ SCÉNY
-                        </p>
-
-                        <p class="mb-4">
-                            Aplikace spolupracuje se serverem, na který automaticky zasílá nově vytvářené tahy štětcem.
-                            a aktualizace pozic headsetu a kontrolerů reprezentující daného hráče.
-                            Dále přijímá a zobrazuje všechny objekty, které se na serveru nacházejí.
-                            Při připojení k serveru musí zadané url končit lomítkem a jméno klienta musí být unikátní pro všechny připojené VR klienty.
-                        </p>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/paintVR1.png">
                     </div>
                 </div>
 
                 <div class="row g-5">
                     <div class="wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">PaintVR</h6>
                             <h2 class="mt-2">Instalace</h2>
                         </div>
                         <p class="mb-4">
                             Z odkazu níže (tlačítko „Stáhnout”) lze stáhnout nejnovější release aplikace PaintVR.
-                            Aplikaci lze spustit pomocí BoxCity.exe souboru, který se nachází v archivu PaintVR.zip.
+                            Pod release označeným zeleným nápisem „Latest” se v sekci „Assets” nachází archiv <i>PaintVR.zip</i>. 
+                            Tento archiv je třeba stáhnout a rozbalit. Aplikace se spouští pomocí <i>PaintVR.exe</i> souboru.
                             Návod na zacházení s aplikací je dostupný níže.
                         </p>
 
                         <p class="mb-4">
-                            Zdrojové kódy aplikace jsou také dostupné z odkazu níže (tlačítko „Stáhnout”). Nacházejí se v archivu Source code.
-                            Jedná se o zdrojové kódy Unity projektu, který lze otevřít <a href="https://support.unity.com/hc/en-us/articles/4402520287124-How-do-I-add-a-project-saved-on-my-computer-into-the-Unity-Hub-">pomocí UnityHub</a>.
-                            Daný projekt je třeba otevřít v Unity verze 2021.3.15f1 nebo vyšší.
-                            V importovaném projektu je hlavní spouštěcí scéna pojmenována stejně jako aplikace - tedy PaintVR.
-                            Dále je třeba nastavit rozlišení hry v záložce Game na FullHD.
+                            Po spuštění aplikace je třeba zadat URL serveru a jméno klienta.
+                            Zadané URL musí končit lomítkem a jméno klienta musí být vždy unikátní pro všechny připojené VR klienty.
                         </p>
 
                         <p class="mb-4">
-                            Zrojové kódy lze upravovat nebo použít pro vývoj vlastních aplikací,
-                            ale není dovoleno odstraňovat podpis původního autora.
+                            Zdrojové kódy aplikace jsou také dostupné z odkazu níže (tlačítko „Stáhnout”).
+                            Nacházejí se opět v sekci „Assets”, konkrétně v archivu <i>Source code</i>.
+                            Jedná se o zdrojové kódy Unity projektu, který lze otevřít <a href="https://support.unity.com/hc/en-us/articles/4402520287124-How-do-I-add-a-project-saved-on-my-computer-into-the-Unity-Hub-">pomocí aplikace UnityHub</a>.
+                            Daný projekt je třeba otevřít ve verzi Unity 2021.3.15f1 nebo vyšší.
+                            V importovaném projektu je hlavní spouštěcí scéna pojmenována stejně jako aplikace - tedy PaintVR.
+                            Dále je třeba v Unity editoru nastavit rozlišení hry v záložce Game na FullHD.
+                        </p>
+
+                        <p class="mb-4">
+                            Zdrojové kódy lze upravovat nebo použít pro vývoj vlastních aplikací,
+                            ale není dovoleno odstraňovat podpis původního autora (pokud se ve zdrojovém kódu nachází).
                         </p>
 
                         <div class="d-flex align-items-center mt-4">
@@ -185,17 +181,19 @@
                         </p>
 
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">PaintVR</h6>
                             <h2 class="mt-2">Konfigurační soubor</h2>
                         </div>
                         <p class="mb-4">
-                            Z konfiguračního souboru se načítají počáteční hodnoty parametrů spouštěné aplikace.
-                            Patří mezi ně rozměry pokoje, udávající šířku a délku bezpečné zóny, ve které se uživatel může
+                            Hodnoty parametrů spouštěné aplikace je možné ovlivnit pomocí konfiguračního souboru.
+                            Mezi tyto parametry patří jméno klienta, URL serveru a rozměry pokoje, udávající šířku a délku bezpečné zóny, ve které se uživatel může
                             pohybovat aniž by se musel obávat, že narazí do objektů v reálném světě.
                             Rozměry se zadávají v metrech, pokud se jedná o desetinné číslo, musí být zapsáno s desetinnou tečkou
                             a mezi jednotlivými hodnotami se nachází čárka.
-                            Zadané url serveru musí končit lomítkem a jméno musí být unikátní pro všechny VR klienty.
-                            Konfigurační soubor s názvem config.txt musí být umístěn na stejné úrovni jako soubor PaintVR.exe.
+                            Zadané URL serveru musí končit lomítkem a jméno musí být unikátní pro všechny VR klienty.
+                            Konfigurační soubor s názvem <i>config.txt</i> musí být umístěn na stejné úrovni jako soubor <i>PaintVR.exe</i>.
+                        </p>
+
+                        <p class="mb-4">
                             Jeho tvar je následující:
                         </p>
 
@@ -212,7 +210,6 @@
                 <div class="row g-5">
                     <div class="wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Box City</h6>
                             <h2 class="mt-2">Návod k obsluze</h2>
                         </div>
                         <p class="mb-4">

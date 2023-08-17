@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Brush Export</title>
+    <title>Serverová aplikace</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -58,9 +58,9 @@
                         <a href="index.html" class="nav-item nav-link">Domů</a>
                         <a href="about.html" class="nav-item nav-link">O systému</a>
                         <a href="devices.html" class="nav-item nav-link">Zařízení</a>
-                        <a href="server.html" class="nav-item nav-link">Server</a>
+                        <a href="server.html" class="nav-item nav-link active">Server</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Klientské aplikace</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Klientské aplikace</a>
                             <div class="dropdown-menu m-0">
                                 <a href="virtualReality.html" class="dropdown-item">Virtuální realita</a>
                                 <a href="depthCam.html" class="dropdown-item">Hloubková kamera</a>
@@ -80,16 +80,8 @@
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Brush Export</h1>
+                            <h1 class="text-white animated zoomIn">Serverová aplikace</h1>
                             <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="about.html">O systému</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="virtualReality.html">Virtuální reatlita</a></li>
-                                </ol>
-                            </nav>
-
                         </div>
                     </div>
                 </div>
@@ -123,24 +115,20 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Podpůrná aplikace</h6>
+                            <h6 class="position-relative text-primary ps-4">Server</h6>
                             <h2 class="mt-2">O aplikaci</h2>
                         </div>
                         <p class="mb-4">
-                            Brush Export umožňuje vytvářet nové uživatelské štětce, které lze poté použít v aplikaci <a href="paintVR.html">PaintVR</a>.
-                            V této aplikaci lze upravovat parametry štětce, a poskytuje náhled na vytvářený štětec, který lze exportovat jako XML soubor.
-                            Mezi parametry štětce patří jeho jméno, velikost, barva a jeho textura.
-                            Velikost štětce se periodicky mění v průběhu času kreslení.
-                            Průběh této změny je taktéž jedním z parametrů.
-                        </p>
-
-                        <p class="mb-4">
-                            Aplikace podporuje skriptovací jazyk Python.
-                            Příklady zdrojových kódů, které je možné v aplikaci vykonat lze stáhnout z odkazu níže (tlačítko „Úlohy”).
+                            Serverová aplikace je základní aplikací, bez které není možné využívat všech vlastností aplikací klientských.
+                            Na serveru je uchováván virtuální svět, který je společný pro všechna zařízení.
+                            Připojují se k němu klientské aplikace, které s ním komunikují 
+                            a mohou do virtuálního světa přidávat objekty, mazat z něj existující objekty,
+                            nebo s objekty ve virtuálním světě manipulovat.
+                            Server o přijetí nových objektů či o změnách objetků stávajících informuje všechny připojené klienty.
                         </p>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/brushExport1.png">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
                     </div>
                 </div>
 
@@ -150,53 +138,24 @@
                             <h2 class="mt-2">Instalace</h2>
                         </div>
                         <p class="mb-4">
-                            Z odkazu níže (tlačítko „Stáhnout”) lze stáhnout nejnovější release aplikace Brush Export.
-                            Pod release označeným zeleným nápisem „Latest” se v sekci „Assets” nachází archiv <i>BrushExport.zip</i>. 
-                            Tento archiv je třeba stáhnout a rozbalit. Aplikace se spouští pomocí <i>BrushExport.exe</i> souboru.
-                            Návod na zacházení s aplikací je dostupný níže. 
-                        </p>
+                            stáhnout prj,
+                            instalovat docker,
+                            .NET 6
 
-                        <p class="mb-4">
-                            Zdrojové kódy aplikace jsou také dostupné z odkazu níže (tlačítko „Stáhnout”).
-                            Nacházejí se opět v sekci „Assets”, konkrétně v archivu <i>Source code</i>.
-                            Jedná se o zdrojové kódy Unity projektu, který lze otevřít <a href="https://support.unity.com/hc/en-us/articles/4402520287124-How-do-I-add-a-project-saved-on-my-computer-into-the-Unity-Hub-">pomocí aplikace UnityHub</a>.
-                            Daný projekt je třeba otevřít ve verzi Unity 2021.2.7f1 nebo vyšší.
-                            V importovaném projektu je hlavní spouštěcí scéna pojmenována stejně jako aplikace - tedy BrushExport.
-                            Dále je třeba nastavit rozlišení hry v záložce Game na 1024x600.
-                        </p>
+                            Z odkazu níže (tlačítko „Stáhnout”) lze stáhnout serverová aplikace.
+                            zelené tlačítko code, Download zip
+                            dostanu .NET VS projekt
 
-                        <p class="mb-4">
-                            Zdrojové kódy lze upravovat nebo použít pro vývoj vlastních aplikací,
-                            ale není dovoleno odstraňovat podpis původního autora (pokud se ve zdrojovém kódu nachází).
+                            Návod na zacházení s aplikací je dostupný níže.
                         </p>
 
                         <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="https://github.com/ITLaboratorySokolov/VR-App2/releases">Stáhnout</a>
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="doc/BrushExpExcer.pdf">Úlohy</a>
+                            <a class="btn btn-primary rounded-pill px-4 me-3" href="https://github.com/ITLaboratorySokolov/server/tree/dev">Stáhnout</a>
                         </div>
 
                         <p>
 
                         </p>
-
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h2 class="mt-2">Konfigurační soubor</h2>
-                        </div>
-                        <p class="mb-4">
-                            Z konfiguračního souboru se načítají počáteční hodnoty parametrů spouštěné aplikace.
-                            Tento soubor musí být pojmenován <i>config.txt</i> a umístěn na stejné úrovni jako soubor <i>BrushExport.exe</i>.
-                        </p>
-
-                        <p class="mb-4">
-                            Jeho tvar je následující:
-                        </p>
-
-                        <div class="codeblock">
-                            <pre>
-    &lt; cesta k python .dll &gt;</pre>
-                        </div>
-                    </div>
-
                 </div>
 
                 <div class="row g-5">
@@ -205,7 +164,10 @@
                             <h2 class="mt-2">Návod k obsluze</h2>
                         </div>
                         <p class="mb-4">
-                            <iframe width="55%" height="415"  src="https://www.youtube.com/embed/imtl6tpQSus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            spuštění,
+                            docker kontejner,
+                            swagger věci,
+                            odkaz na user doc
                         </p>
                     </div>
                 </div>
@@ -213,6 +175,7 @@
             </div>
         </div>
         <!-- About End -->
+        
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">

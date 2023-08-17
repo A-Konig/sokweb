@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Podkova - Software pro laboratoře techniky</title>
+    <title>Depth Mesh</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/FAV_log.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,7 +117,7 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Depth Mesh</h6>
+                            <h6 class="position-relative text-primary ps-4">Klientská aplikace</h6>
                             <h2 class="mt-2">O aplikaci</h2>
                         </div>
                         <p class="mb-4">
@@ -130,33 +130,41 @@
 
                         <p class="mb-4">
                             Aplikace spolupracuje se serverem, na který je možné zaslat vytvořený 3D model scény, nebo zapnout automatické snímání a odesílání.
-                            Při připojení k serveru musí zadané url končit lomítkem a jméno klienta musí být unikátní pro všechny připojené klienty typu Depth Mesh.
+                            Vzniklý model je tedy možné prohlížet nebo upravovat v dalších klientských aplikacích.
                         </p>
 
                         <p class="mb-4">
-                            POPIS SKRITPOVÁNÍ S PYTHONEM
-                            CO SE TAM DÁ DĚLAT, PROČ POTŘEBUJU PYTHON DLL A TAK
+                            Aplikace podporuje skriptovací jazyk Python.
+                            Příklady zdrojových kódů, které je možné v aplikaci vykonat lze stáhnout z odkazu níže (tlačítko „Úlohy”).
                         </p>
+
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/depth1.png">
                     </div>
                 </div>
 
                 <div class="row g-5">
                     <div class="wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Depth Mesh</h6>
                             <h2 class="mt-2">Instalace</h2>
                         </div>
+
                         <p class="mb-4">
                             Z odkazu níže (tlačítko „Stáhnout”) lze stáhnout nejnovější release aplikace Depth Mesh.
-                            Aplikace se spouští dvojklikem na soubor DepthMesh.bat, který se nachází v archivu DepthMesh.zip.
+                            Pod release označeným zeleným nápisem „Latest” se v sekci „Assets” nachází archiv <i>DepthMesh.zip</i>. 
+                            Tento archiv je třeba stáhnout a rozbalit. Aplikace se spouští pomocí <i>DepthMesh.bat</i> souboru.
                             Návod na zacházení s aplikací a příklady úloh pro studenty jsou dostupné níže.
                         </p>
 
                         <p class="mb-4">
-                            Zdrojové kódy aplikace jsou také dostupné z odkazu níže (tlačítko „Stáhnout”). Nacházejí se v archivu Source code.
+                            V aplikaci je možné zadat URL serveru, na který se lze poté připojit, a změnit jméno klienta.
+                            Zadané URL musí končit lomítkem a jméno klienta musí být vždy unikátní pro všechny připojené klienty typu Depth Mesh.
+                        </p>
+
+                        <p class="mb-4">
+                            Zdrojové kódy aplikace jsou také dostupné z odkazu níže (tlačítko „Stáhnout”).
+                            Nacházejí se opět v sekci „Assets”, konkrétně v archivu <a>DepthMeshSetup.zip</a>.
                             Jedná se o zdrojové kódy VisualStudio projektu v jazyce C#.
 
                             Pro úspěšný setup projektu je třeba splnit následující předpoklady:
@@ -165,7 +173,7 @@
                                     nainstalovaný .NET 6,
                                 </li>
                                 <li>
-                                    nainstalovaný cmake,
+                                    nainstalovaný <a href="https://cmake.org/download/">cmake</a>,
                                 </li>
                                 <li>
                                     nainstalovaná knihovna <a href="https://www.intelrealsense.com/sdk-2/">Intel RealSense SDK 2.0</a>.
@@ -213,12 +221,12 @@
 
                         <p class="mb-4">
                             Zrojové kódy lze upravovat nebo použít pro vývoj vlastních aplikací,
-                            ale není dovoleno odstraňovat podpis původního autora.
+                            ale není dovoleno odstraňovat podpis původního autora (pokud se ve zdrojovém kódu nachází).
                         </p>
 
                         <div class="d-flex align-items-center mt-4">
                             <a class="btn btn-primary rounded-pill px-4 me-3" href="https://github.com/ITLaboratorySokolov/depth-client/releases">Stáhnout</a>
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="404.html">Úlohy</a>
+                            <a class="btn btn-primary rounded-pill px-4 me-3" href="doc/DepthMeshExcer.pdf">Úlohy</a>
                         </div>
 
                         <p>
@@ -226,15 +234,19 @@
                         </p>
 
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Depth Mesh</h6>
                             <h2 class="mt-2">Konfigurační soubor</h2>
                         </div>
                         <p class="mb-4">
-                            Konfigurační soubor s názvem config.txt musí být umístěn ve složce src,
-                            ve které se mimo jiné nachází exe soubor aplikace.
-                            Z konfiguračního souboru se načítají počáteční hodnoty parametrů aplikace.
+                            Hodnoty parametrů spouštěné aplikace je možné ovlivnit pomocí konfiguračního souboru.
+                            Mezi tyto parametry patří URL serveru, jméno klienta a cesta k použitému python.dll
                             Zadané url serveru musí končit lomítkem a jméno musí být unikátní pro všechny klienty typu Depth Mesh.
-                            Jeho tvar je následující:
+
+                            Konfigurační soubor s názvem <i>config.txt</i> musí být umístěn ve složce src z archivu <i>DepthMesh.zip</i>,
+                            ve které se mimo jiné nachází exe soubor aplikace.
+                        </p>
+                        
+                        <p class="mb-4">
+                                Jeho tvar je následující:
                         </p>
 
                         <div class="codeblock">
@@ -250,7 +262,6 @@
                 <div class="row g-5">
                     <div class="wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Depth Mesh</h6>
                             <h2 class="mt-2">Návod k obsluze</h2>
                         </div>
                         <p class="mb-4">

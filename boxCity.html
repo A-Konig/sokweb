@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Podkova - Software pro laboratoře techniky</title>
+    <title>Box City</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/FAV_log.png" rel="icon"> <!--  favicon.ico -->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,63 +120,63 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Box City</h6>
+                            <h6 class="position-relative text-primary ps-4">Klientská aplikace</h6>
                             <h2 class="mt-2">O aplikaci</h2>
                         </div>
                         <p class="mb-4">
                             Aplikace Box City slouží k seznámení uživatele s virtuální realitou.
-                            Umožňuje pohybovat se po virtuální scéně a osvojit si manipulaci s objekty, které se v této scéně nacházejí.
-                            Nachází se zde městečko s krabicemi, se kterými je možné manipulovat v rámci implementované minihry. 
-                        </p>
-                            
-                        <p class="mb-4">
+                            Umožňuje uživateli pohyb po virtuální scéně ve které si může osvojit manipulaci s objekty.
                             Aplikace komunikuje se serverem a zajišťuje automatické odesílání a přijímání objektů,
                             takže ji lze použít k prohlížení virtuálních objektů z ostatních klientských aplikací.
                         </p>
 
                         <p class="mb-4">
-                            MINIHRA
-                            UKLÁDÁNÍ SCÉNY
+                            Virtuální scéna obsahuje vesmírné městečko, ve kterém jsou poschovávány krabice,
+                            které má uživatel v rámci minihry nalézt.
                         </p>
 
-                        <p class="mb-4">
-                            Aplikace spolupracuje se serverem, na který automaticky zasílá aktualizace pozic krabic, všech objektů přijatých ze serveru,
-                            a headsetu a kontrolerů reprezentující daného hráče.
-                            Při připojení k serveru musí zadané url končit lomítkem a jméno klienta musí být unikátní pro všechny připojené VR klienty.
-                        </p>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/demoBox2.PNG">
                     </div>
                 </div>
 
                 <div class="row g-5">
                     <div class="wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Box City</h6>
                             <h2 class="mt-2">Instalace</h2>
                         </div>
                         <p class="mb-4">
                             Z odkazu níže (tlačítko „Stáhnout”) lze stáhnout nejnovější release aplikace Box City.
-                            Aplikaci lze spustit pomocí BoxCity.exe souboru, který se nachází v archivu BoxCity.zip.
+                            Pod release označeným zeleným nápisem „Latest” se v sekci „Assets” nachází archiv <i>BoxCity.zip</i>. 
+                            Tento archiv je třeba stáhnout a rozbalit. Aplikace se spouští pomocí <i>BoxCity.exe</i> souboru.
                             Návod na zacházení s aplikací je dostupný níže.
                         </p>
 
                         <p class="mb-4">
-                            Zdrojové kódy aplikace jsou také dostupné z odkazu níže (tlačítko „Stáhnout”). Nacházejí se v archivu Source code.
-                            Jedná se o zdrojové kódy Unity projektu, který lze otevřít <a href="https://support.unity.com/hc/en-us/articles/4402520287124-How-do-I-add-a-project-saved-on-my-computer-into-the-Unity-Hub-">pomocí UnityHub</a>.
-                            Daný projekt je třeba otevřít v Unity verze 2021.3.15f1 nebo vyšší.
-                            V importovaném projektu je hlavní spouštěcí scéna pojmenována stejně jako aplikace - tedy Box City.
-                            Dále je třeba nastavit rozlišení hry v záložce Game na FullHD.
-
-                            Pro správný import tohoto projektu je třeba mít instalován <a href="https://www.blender.org/download/lts/2-93/">Blender 2.93.1+</a>,
-                            pokud se po spuštění scény CityScene nezobrazují budovy „vesmírného městečka”,
-                            je třeba ještě importovat balíček CityRefresh_v2, který se nachází v zipu se zdrojovými kódy („Asset” -> „ImportPackage” ->  „CustomPackage” -> vybrat CityRefresh_v2.package)
+                            Po spuštění aplikace je třeba zadat URL serveru a jméno klienta.
+                            Zadané URL musí končit lomítkem a jméno klienta musí být vždy unikátní pro všechny připojené VR klienty.
                         </p>
 
                         <p class="mb-4">
-                            Zrojové kódy lze upravovat nebo použít pro vývoj vlastních aplikací,
-                            ale není dovoleno odstraňovat podpis původního autora.
+                            Zdrojové kódy aplikace jsou také dostupné z odkazu níže (tlačítko „Stáhnout”).
+                            Nacházejí se opět v sekci „Assets”, konkrétně v archivu <i>Source code</i>.
+                            Jedná se o zdrojové kódy Unity projektu, který lze otevřít <a href="https://support.unity.com/hc/en-us/articles/4402520287124-How-do-I-add-a-project-saved-on-my-computer-into-the-Unity-Hub-">pomocí aplikace UnityHub</a>.
+                            Daný projekt je třeba otevřít ve verzi Unity 2021.3.15f1 nebo vyšší.
+                            V importovaném projektu je hlavní spouštěcí scéna pojmenována stejně jako aplikace - tedy Box City.
+                            Dále je třeba v Unity editoru nastavit rozlišení hry v záložce Game na FullHD.
+                        </p>
+
+                        <p class="mb-4">
+                            Pro správný import tohoto projektu je třeba mít instalován <a href="https://www.blender.org/download/lts/2-93/">Blender 2.93.1</a> nebo vyšší,
+                            pokud se přesto po spuštění scény CityScene nezobrazují budovy „vesmírného městečka”,
+                            je třeba ještě importovat balíček CityRefresh_v2, který se také nachází v sekci „Assets”.
+                            V menu Unity editoru je třeba zvolit následující možnosti: „Asset” -> „ImportPackage” ->  „CustomPackage” a vybrat <i>CityRefresh_v2.package</i>.
+                        </p>
+
+                        <p class="mb-4">
+                            Zdrojové kódy lze upravovat nebo použít pro vývoj vlastních aplikací,
+                            ale není dovoleno odstraňovat podpis původního autora (pokud se ve zdrojovém kódu nachází).
                         </p>
 
                         <div class="d-flex align-items-center mt-4">
@@ -188,17 +188,19 @@
                         </p>
 
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Box City</h6>
                             <h2 class="mt-2">Konfigurační soubor</h2>
                         </div>
                         <p class="mb-4">
-                            Z konfiguračního souboru se načítají počáteční hodnoty parametrů spouštěné aplikace.
-                            Patří mezi ně rozměry pokoje, udávající šířku a délku bezpečné zóny, ve které se uživatel může
+                            Hodnoty parametrů spouštěné aplikace je možné ovlivnit pomocí konfiguračního souboru.
+                            Mezi tyto parametry patří jméno klienta, URL serveru a rozměry pokoje, udávající šířku a délku bezpečné zóny, ve které se uživatel může
                             pohybovat aniž by se musel obávat, že narazí do objektů v reálném světě.
                             Rozměry se zadávají v metrech, pokud se jedná o desetinné číslo, musí být zapsáno s desetinnou tečkou
                             a mezi jednotlivými hodnotami se nachází čárka.
-                            Zadané url serveru musí končit lomítkem a jméno musí být unikátní pro všechny VR klienty.
-                            Konfigurační soubor s názvem config.txt musí být umístěn na stejné úrovni jako soubor BoxCity.exe.
+                            Zadané URL serveru musí končit lomítkem a jméno musí být unikátní pro všechny VR klienty.
+                            Konfigurační soubor s názvem <i>config.txt</i> musí být umístěn na stejné úrovni jako soubor <i>BoxCity.exe</i>.
+                        </p>
+
+                        <p class="mb-4">
                             Jeho tvar je následující:
                         </p>
 
@@ -215,7 +217,6 @@
                 <div class="row g-5">
                     <div class="wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">Box City</h6>
                             <h2 class="mt-2">Návod k obsluze</h2>
                         </div>
                         <p class="mb-4">
