@@ -138,24 +138,41 @@
                             <h2 class="mt-2">Instalace</h2>
                         </div>
                         <p class="mb-4">
-                            stáhnout prj,
-                            instalovat docker,
-                            .NET 6
+                            Předpoklady ke správné funkci serveru jsou:
+                            <ul>
+                                <li>
+                                    instalovaná <a href="https://www.docker.com/">aplikace Docker</a>,
+                                </li>
+                                <li>
+                                    instalovaný .NET 6.
+                                </li>
+                            </ul>
+                        </p>
 
+                        <p class="mb-4">
                             Z odkazu níže (tlačítko „Stáhnout”) lze stáhnout serverová aplikace.
-                            zelené tlačítko code, Download zip
-                            dostanu .NET VS projekt
+                            Je třeba stisknout zelené tlačítko „Code” a zvolit možnost „Download zip”.
+                            Stažené zdrojové kódy jsou Visual Studio projekt v jazyce C# .NET 6.
+                        </p>
 
-                            Návod na zacházení s aplikací je dostupný níže.
+                        <p class="mb-4">
+                            Uvnitř adresářové struktury je k dispozici soubor <i>docker-compose.yml</i>.
+                            Obsahuje příkazy, které popisují způsob sestavení a popis vlastností prostředí pro běh aplikace v Dockeru.
+                            S docker compose se pracuje v příkazové řádce.
+                            Příkazy automaticky použijí nejbližší docker-compose soubor. Postup je následující:
+                            <ul>
+                                <li>
+                                    otevřít příkazovou řádku ve složce ZCU.TechnologyLab.VirtualWorldServer,</li>
+                                <li>
+                                    vytvořit a sestavit kontejner v dockeru příkazem "docker compose create",</li>
+                                <li>
+                                    spustit kontejner se serverem příkazem "docker compose start".</li>
+                            </ul>                            
                         </p>
 
                         <div class="d-flex align-items-center mt-4">
                             <a class="btn btn-primary rounded-pill px-4 me-3" href="https://github.com/ITLaboratorySokolov/server/tree/dev">Stáhnout</a>
                         </div>
-
-                        <p>
-
-                        </p>
                 </div>
 
                 <div class="row g-5">
@@ -164,11 +181,15 @@
                             <h2 class="mt-2">Návod k obsluze</h2>
                         </div>
                         <p class="mb-4">
-                            spuštění,
-                            docker kontejner,
-                            swagger věci,
-                            odkaz na user doc
+                            Uživatelská dokumentace serveru je dostupná níže.
+                            Mimo návod na spuštění serveru obsahuje návod pro základy práce s Docker kontejnerem
+                            a vysvětluje komunikační API serveru, které je možné využít pomocí klientských aplikací,
+                            nebo si pomocí nástroje Swagger vykoušet odeslání dotazů na server z webového prohlížeče.
                         </p>
+
+                        <div class="d-flex align-items-center mt-4">
+                            <a class="btn btn-primary rounded-pill px-4 me-3" href="doc/serverUserDoc.pdf">Uživ. dokumentace</a>
+                        </div>
                     </div>
                 </div>
 
@@ -198,7 +219,7 @@
                         <h5 class="text-white mb-4">Odkazy</h5>
                         <a class="btn btn-link" href="about.html">O systému</a>
                         <a class="btn btn-link" href="contact.html">Kontakt</a>
-                        <a class="btn btn-link" href="404.html">Podmínky použití</a>
+                        <a class="btn btn-link" href="faq.html">Časté dotazy</a>
                     </div>
 
                     <div class="col-md-6 col-lg-3 align-items-center">
@@ -206,7 +227,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3 align-items-center">
-                        <img class="img-fluid" src="img/FAV_cmyk.png" alt="Image">
+                        <a href="https://www.fav.zcu.cz/cs/"><img class="img-fluid" src="img/FAV_cmyk.png" alt="Image"></a>
                     </div>
 
                     <!-- 
